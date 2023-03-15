@@ -1,0 +1,120 @@
+@use '../../assets/styles/utils.scss' as *;
+
+.container {
+  position: relative;
+  background-color: var(--c-white);
+  z-index: 999;
+
+  @include breakpoint(mobile, md) {
+    // padding: 1.5rem 0;
+  }
+
+  >div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakpoint(mobile, md) {
+      justify-content: center;
+      padding: 1.5rem 0;
+    }
+  }
+
+  .logo {
+    display: flex;
+  }
+
+  .nav_links {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    list-style-type: none;
+
+    >li {
+      display: flex;
+
+      >a {
+        position: relative;
+        padding: 1.5rem 0;
+        color: var(--c-neutral-500);
+        font-size: var(--fs-300);
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.25s ease;
+
+        &:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 0%;
+          height: 3px;
+          background: var(--c-gradient-100);
+          border-radius: 50vh;
+          transition: width 0.25s ease;
+        }
+
+        @include hover {
+          color: var(--c-blue-900);
+        }
+
+        &.active {
+          color: var(--c-blue-900);
+
+          &:after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  // mobile nav links
+  .nav_links_mobile {
+    position: absolute;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: calc(100vh - 68px);
+    background-color: var(--c-white);
+
+  }
+
+  // hamburger button
+  .nav_toggler {
+    position: absolute;
+    left: 0;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+
+    span {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      translate: 0 -50%;
+      width: 90%;
+      height: 3px;
+      background-color: var(--c-neutral-800);
+      border-radius: 50vh;
+      transition: all 0.2s ease;
+
+      &:nth-of-type(1) {
+        top: 25%;
+      }
+
+      &:nth-of-type(2) {
+        width: 65%;
+      }
+
+      &:nth-of-type(3) {
+        top: 75%;
+        width: 80%;
+      }
+    }
+  }
+}
