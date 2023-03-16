@@ -1,0 +1,86 @@
+@use '../../../assets/styles/utils.scss' as *;
+
+.container {
+  position: relative;
+
+  >div {
+    // position: relative;
+    display: grid;
+    grid-template-columns: 0.825fr 1.175fr;
+    padding: 10rem 0;
+
+    @include breakpoint(mobile, lg) {
+      grid-template-columns: 1fr 1fr;
+      padding: 6rem 0;
+    }
+
+    @include breakpoint(mobile, md) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr auto;
+      padding: 0 0 6rem;
+    }
+  }
+
+  .illustration {
+    position: relative;
+
+    @include breakpoint(mobile, md) {
+      position: static;
+    }
+
+    picture {
+      position: absolute;
+      translate: 0 -50%;
+      pointer-events: none;
+
+      >img {
+        width: 100%;
+      }
+
+      &.background {
+        top: 35%;
+        left: 0;
+        width: 200%;
+        z-index: 7;
+
+        @include breakpoint(mobile, md) {
+          top: 0;
+          left: 0;
+          translate: unset;
+          width: 100%
+        }
+      }
+
+      &.mockup {
+        width: 110%;
+        top: 60%;
+        left: 28%;
+        z-index: 9;
+
+        @include breakpoint(mobile, md) {
+          position: relative;
+          width: 100%;
+          top: -10%;
+          left: unset;
+          translate: unset;
+        }
+      }
+    }
+  }
+
+  .content {
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+
+    @include breakpoint(mobile, md) {
+      grid-row: auto;
+      align-items: center;
+      margin: auto;
+      width: min(450px, 100%);
+      text-align: center;
+    }
+  }
+}
