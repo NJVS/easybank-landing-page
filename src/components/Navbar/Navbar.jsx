@@ -17,12 +17,12 @@ import { ReactComponent as IconPrivacy } from '../../assets/icons/shield-halved-
 
 const Navbar = () => {
   const [toggled, setToggled] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 734);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 734);
 
   // resize event
   useEffect(() => {
     window.addEventListener('resize', () => {
-      setIsMobile(window.innerWidth < 734);
+      setIsMobile(window.innerWidth <= 734);
       setToggled(false);
     });
   }, []);
@@ -30,6 +30,7 @@ const Navbar = () => {
   // disable scroll
   useEffect(() => {
     document.documentElement.style.overflow = toggled ? 'hidden' : '';
+    (toggled) && window.scrollTo(0,0);
   }, [toggled])
 
   return (
@@ -55,7 +56,7 @@ const Navbar = () => {
               <li><a href="/">Blog</a></li>
               <li><a href="/">Careers</a></li>
             </ul>
-            <a href="" className={global.button}>
+            <a href="" className={`${global.button} ${global.sm}`}>
               <span>Request Invite</span>
             </a>
           </>
@@ -63,7 +64,7 @@ const Navbar = () => {
           <div className={`${styles.nav_mobile} ${toggled ? styles.toggled : ''}`}>
             <div className={styles.overlay} onClick={() => setToggled(false)}></div>
             <div className={styles.inner}>
-              <a href="" className={global.button}>
+              <a href="" className={`${global.button} ${global.sm}`}>
                 <span>Request Invite</span>
               </a>
               <ul className={styles.nav_links_mobile}>
