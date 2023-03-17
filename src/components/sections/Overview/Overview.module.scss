@@ -1,0 +1,62 @@
+@use '../../../assets/styles/utils.scss' as *;
+
+.container {
+  position: relative;
+  padding: 6rem 0;
+  background-color: var(--c-neutral-100);
+  z-index: 8;
+
+  >div {
+    @include layoutFlex(column, 2.5rem);
+  }
+
+  .header {
+    @include layoutFlex(column, 1.5rem);
+    width: min(650px, 100%);
+
+    @include breakpoint(mobile, md) {
+      text-align: center;
+    }
+  }
+
+  .body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem 1rem;
+
+    .item {
+      @include layoutFlex(column, 1.5rem);
+      width: 265px;
+
+      .item_header {
+        @include layoutFlex(column, 2.5rem);
+      }
+    }
+
+    @include breakpoint(mobile, lg) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem 0rem;
+
+      .item {
+        width: 300px;
+      }
+    }
+
+    @include breakpoint(mobile, md) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 3rem 0;
+
+      .item {
+        width: min(400px, 90%);
+        text-align: center;
+        .item_header {
+          align-items: center;
+          gap: 1.5rem;
+        }
+      }
+    }
+  }
+}
