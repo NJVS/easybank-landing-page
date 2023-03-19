@@ -1,0 +1,98 @@
+@use '../../assets/styles/utils.scss' as *;
+
+.container {
+  padding: 4rem 0;
+  background-color: var(--c-blue-900);
+
+  >div {
+    @include layoutFlex(row, 3rem);
+
+    @include breakpoint(mobile, lg) {
+      flex-wrap: wrap
+    }
+
+    @include breakpoint(mobile, md) {
+      @include layoutFlex(column, 1.5rem);
+    }
+  }
+
+  .logos {
+    @include layoutFlex(column);
+    justify-content: space-between;
+
+    @include breakpoint(mobile, lg) {
+      flex-basis: 100%;
+      @include layoutFlex(row);
+    }
+
+    @include breakpoint(mobile, md) {
+      @include layoutFlex(column, 1rem);
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+
+      >svg>g>path {
+        fill: var(--c-white);
+      }
+    }
+
+    .socials {
+      @include layoutFlex(row, 1rem);
+
+      a {
+        text-decoration: none;
+
+        >svg>path {
+          transition: fill 0.2s ease;
+        }
+
+        &:hover>svg>path {
+          fill: var(--c-lime-green-400);
+        }
+      }
+    }
+  }
+
+  .nav_links {
+    flex-grow: 1;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem 3rem;
+    padding-left: 3rem;
+    font-size: var(--fs-300);
+
+    @include breakpoint(mobile, lg) {
+      padding: 0;
+    }
+
+    @include breakpoint(mobile, md) {
+      @include layoutFlex(column, 1rem);
+      align-items: center;
+    }
+
+    a {
+      color: var(--c-neutral-400);
+      text-decoration: none;
+    }
+  }
+
+  .attr {
+    @include layoutFlex(column, 1.5rem);
+    align-items: flex-end;
+    justify-content: center;
+
+    @include breakpoint(mobile, md) {
+      @include layoutFlex(column, 1rem);
+      align-items: center;
+    }
+
+    >p {
+      color: var(--c-neutral-400);
+      font-size: var(--fs-300);
+    }
+  }
+}
