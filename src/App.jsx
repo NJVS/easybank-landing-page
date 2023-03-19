@@ -1,6 +1,20 @@
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
+import Articles from "./components/sections/Articles/Articles";
+import Hero from "./components/sections/Hero/Hero";
+import Overview from "./components/sections/Overview/Overview";
+
 function App() {
   return (
-    <h1>Hello World!</h1>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <Overview />
+        <Articles />
+      </main>
+      <Footer />
+    </>
   );
 }
 
