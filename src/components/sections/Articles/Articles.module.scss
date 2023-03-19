@@ -1,0 +1,58 @@
+@use '../../../assets/styles/utils.scss' as *;
+
+.container {
+  padding: 6rem 0;
+  position: relative;
+
+  >div {
+    @include layoutFlex(column, 3rem);
+  }
+  .header {
+    @include breakpoint(mobile, md) {
+      text-align: center;
+    }
+  }
+
+  .body {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem 1rem;
+
+    .item {
+      @include layoutFlex(column);
+      width: 265px;
+      background-color: var(--c-white);
+      border-radius: 0.75rem;
+      overflow: hidden;
+
+      .item_header > img {
+        width: 100%;
+        aspect-ratio: 533/400;
+      }
+      .item_body {
+        @include layoutFlex(column, 0.625rem);
+        padding: 1.25rem 1rem;
+      }
+    }
+
+    @include breakpoint(mobile, lg) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+
+      .item {
+        width: unset;
+      }
+    }
+
+    @include breakpoint(mobile, md) {
+      display: flex;
+      flex-wrap: wrap;
+      
+      .item {
+        width: min(450px, 90%);
+      }
+    }
+  }
+}
