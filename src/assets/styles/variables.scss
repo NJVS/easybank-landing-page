@@ -2,12 +2,14 @@
 
 :root {
   --ff-primary: 'Public Sans', sans-serif;
+  --fs-200: 0.675rem;
   --fs-300: 0.875rem;
   --fs-400: 1rem;
+  --fs-500: clamp(1rem, 1.5vw, 1.125rem);
   --fs-600: 1.25rem;
-  --fs-700: 1.5rem;
-  --fs-800: clamp(1.675rem, 5vw, 2.25rem);
-  --fs-900: clamp(2rem, 5.5vw, 3rem);
+  --fs-700: clamp(1.375rem, 3vw, 1.5rem);
+  --fs-800: clamp(1.875rem, 5vw, 2.5rem);
+  --fs-900: clamp(2.5rem, 4.5vw, 3.375rem);
 
   /* PRIMARY */
   --c-lime-green-400: hsl(136, 65%, 51%);

@@ -10,5 +10,6 @@ body, html {
 }
 
 body {
-  background-color: var(--c-neutral-100);
+  background-color: var(--c-neutral-50);
+  min-height: 100vh; // temp
 }

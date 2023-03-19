@@ -25,6 +25,12 @@
   }
 }
 
+@mixin layoutFlex($direction: row, $gap: 0 0) {
+  display: flex;
+  flex-direction: $direction;
+  gap: $gap;
+}
+
 
 // FUNCTIONS
 @function deepMap($map, $keys...) {
