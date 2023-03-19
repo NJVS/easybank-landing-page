@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/easybank-landing-page/static/css/main.4bee8ac1.css",
+    "main.js": "/easybank-landing-page/static/js/main.d6712666.js",
+    "static/media/image-currency.jpg": "/easybank-landing-page/static/media/image-currency.1b385bf9f62bf25ef22d.jpg",
+    "static/media/image-restaurant.jpg": "/easybank-landing-page/static/media/image-restaurant.1951b57675babfd83c6c.jpg",
+    "static/media/image-mockups.png": "/easybank-landing-page/static/media/image-mockups.48d35b175fe3d36de4ee.png",
+    "static/media/image-plane.jpg": "/easybank-landing-page/static/media/image-plane.03db115dff75876c3f3d.jpg",
+    "static/media/image-confetti.jpg": "/easybank-landing-page/static/media/image-confetti.67921b1124297023a080.jpg",
+    "static/media/icon-api.svg": "/easybank-landing-page/static/media/icon-api.74c8ad1751bbd1e7f545e458f9306885.svg",
+    "static/media/icon-onboarding.svg": "/easybank-landing-page/static/media/icon-onboarding.d74aed6429619336a30e42334d6eb432.svg",
+    "static/media/logo.svg": "/easybank-landing-page/static/media/logo.3b267ecf9a513321822ec57250d465c1.svg",
+    "static/media/icon-budgeting.svg": "/easybank-landing-page/static/media/icon-budgeting.ad7169975ea1eda87072ea0325a8204a.svg",
+    "static/media/bg-intro-desktop.svg": "/easybank-landing-page/static/media/bg-intro-desktop.8be308fd4ce79bd32a09ec5437774701.svg",
+    "static/media/bg-intro-mobile.svg": "/easybank-landing-page/static/media/bg-intro-mobile.c2ed38d05001e62c1c09a9cbc976c741.svg",
+    "static/media/icon-online.svg": "/easybank-landing-page/static/media/icon-online.b0622b15741418e9efe3805d1b2ac26b.svg",
+    "static/media/icon-instagram.svg": "/easybank-landing-page/static/media/icon-instagram.54d3962efa2aa6085b776d1816557a6a.svg",
+    "index.html": "/easybank-landing-page/index.html",
+    "static/media/icon-pinterest.svg": "/easybank-landing-page/static/media/icon-pinterest.45264b1d1cdf7f0c420d573853779f7b.svg",
+    "static/media/house-solid.svg": "/easybank-landing-page/static/media/house-solid.6085a0c3c3f9ed3b5bb15e3728f99537.svg",
+    "static/media/file-pen-solid.svg": "/easybank-landing-page/static/media/file-pen-solid.48fb74dbba1e7bf9041a0e39584a2547.svg",
+    "static/media/square-phone-solid.svg": "/easybank-landing-page/static/media/square-phone-solid.51a6b745e1b5dc3012ca4a4759da8852.svg",
+    "static/media/headphones-solid.svg": "/easybank-landing-page/static/media/headphones-solid.c052ee1c99ed124e3cb72cf36880271d.svg",
+    "static/media/briefcase-solid.svg": "/easybank-landing-page/static/media/briefcase-solid.c700909d354f31a2d609b0584216abb4.svg",
+    "static/media/icon-twitter.svg": "/easybank-landing-page/static/media/icon-twitter.01a8907dd0beb126cff27d505c31be52.svg",
+    "static/media/shield-halved-solid.svg": "/easybank-landing-page/static/media/shield-halved-solid.ae43c828336331727d51d374d32134c6.svg",
+    "static/media/circle-info-solid.svg": "/easybank-landing-page/static/media/circle-info-solid.30fbbea1bb8029af0dc492a5f76682ea.svg",
+    "static/media/icon-youtube.svg": "/easybank-landing-page/static/media/icon-youtube.7d6960fbb0c4831f7c667012f0b102d2.svg",
+    "static/media/icon-facebook.svg": "/easybank-landing-page/static/media/icon-facebook.1e9b33385e6dfe7a61acbff13373209c.svg",
+    "main.4bee8ac1.css.map": "/easybank-landing-page/static/css/main.4bee8ac1.css.map",
+    "main.d6712666.js.map": "/easybank-landing-page/static/js/main.d6712666.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4bee8ac1.css",
+    "static/js/main.d6712666.js"
+  ]
+}
