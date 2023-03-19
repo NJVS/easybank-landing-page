@@ -55,7 +55,7 @@ Users should be able to:
 - Responsive Web Design
 
 ### What I learned
-I have nothing to say about this challenge tbh. I know using ReactJS for this challenge is a bit overkill but I'm still practicing so yeah. I'm currently trying out NextJs and Vite, and planning to use it for my future challenge here at FEM.
+I didn't encounter any problems for this project tbh. I change some of the designs like the button hover and the mobile navigation bar and that's pretty much it. I know using ReactJS for this challenge is a bit overkill but I'm still practicing so yeah. I'm currently trying out NextJs and Vite, and planning to use it for my future challenge here at FEM.
 
 ### Useful resources
 - [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
